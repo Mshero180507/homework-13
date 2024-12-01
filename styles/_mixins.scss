@@ -1,0 +1,39 @@
+@mixin title($margin-right){
+    font-weight: 700;
+	font-size: 11px;
+	font-family: "Roboto", serif;
+    display: inline-block;
+    margin-right: $margin-right;
+}
+
+@mixin parents($image, $height, $width){
+    width: $width;
+    height: $height;
+    background-image: $image;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@mixin titles($font-weight){
+    font-weight: $font-weight;
+    font-size: 24px;
+    font-family: "Roboto", serif;
+}
+
+@mixin pic-size($height, $width){
+    height: $height;
+    width:$width;
+}
+
+@mixin div($display, $gap){
+    display: $display;
+    gap: $gap;
+}
+
+@mixin nav($color, $font-weight, $font-size, $font-family){
+    color: $color;
+    font-weight: $font-weight;
+    font-size: $font-size;
+    font-family: $font-family;
+}
